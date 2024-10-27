@@ -144,7 +144,7 @@ pip-selfcheck.json
 # .idea/modules
 # *.iml
 # *.ipr
-
+Makefile
 # CMake
 cmake-build-*/
 

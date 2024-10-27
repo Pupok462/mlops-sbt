@@ -31,5 +31,5 @@ def compare(matrix_size: int) -> None:
     )
 
 if __name__ == "__main__":
-    for size in [10, 50, 100, 300, 500, 700]:
+    for size in [100, 1000, 2000, 3000, 6000, 10000]:
         compare(size)
