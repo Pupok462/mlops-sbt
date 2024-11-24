@@ -57,7 +57,6 @@ class GAN(pl.LightningModule):
         batch_size = real_images.size(0)
         device = self.device
 
-        # Оценка потерь дискриминатора
         real_labels = torch.ones(batch_size, 1, device=device)
         fake_labels = torch.zeros(batch_size, 1, device=device)
 
