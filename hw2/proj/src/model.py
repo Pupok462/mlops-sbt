@@ -15,6 +15,11 @@ class GAN(pl.LightningModule):
 
         self.automatic_optimization = False
 
+    def forward(self):
+        z = torch.randn(1, self.conf['model']['generator']['latent_size'])
+        return self.generator(z)
+
+
     def training_step(self, batch, batch_idx):
         real_images, _ = batch
         batch_size = real_images.size(0)
