@@ -1,0 +1,11 @@
+model:
+  device: mps
+
+  generator:
+    latent_size: 64
+    image_size: 784
+    hidden_size: 256
+
+  discriminator:
+    image_size: ${model.generator.image_size}
+    hidden_size: ${model.generator.hidden_size}

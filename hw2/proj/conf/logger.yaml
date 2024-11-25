@@ -1,0 +1,4 @@
+logger:
+  tensorboard:
+    path: ./.logs/my-tb-logs
+    name: pupok_tb_logger

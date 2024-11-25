@@ -1,0 +1,6 @@
+train:
+  learning_rate: 0.0002
+  num_epochs: 60
+  accelerator: ${model.device}
+  val_check_interval: 1.0
+  log_every_n_steps: 1000

@@ -12,16 +12,16 @@ data:
   val_path_csv: mnist_test.csv
   dataloader_num_workers: 2
   batch_size: 100
-logger:
-  tensorboard:
-    path: ./.logs/my-tb-logs
-    name: pupok_tb_logger
 train:
   learning_rate: 0.0002
   num_epochs: 60
   accelerator: ${model.device}
   val_check_interval: 1.0
   log_every_n_steps: 1000
+logger:
+  tensorboard:
+    path: ./.logs/my-tb-logs
+    name: pupok_tb_logger
 artifacts:
   experiment_name: example-experiment
   checkpoint:
@@ -32,3 +32,5 @@ artifacts:
     save_top_k: 1
     every_n_train_steps: null
     every_n_epochs: 6
+init_weights: checkpoints/example-experiment/epoch=17-val_loss=0.0000.ckpt
+save_image: generator_image.png

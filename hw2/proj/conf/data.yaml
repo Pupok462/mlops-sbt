@@ -1,0 +1,5 @@
+data:
+  train_path_csv: mnist_train.csv
+  val_path_csv: mnist_test.csv
+  dataloader_num_workers: 2
+  batch_size: 100
