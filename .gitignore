@@ -186,3 +186,9 @@ fabric.properties
 MLOps/
 hw2/hw2_venv/
 .idea/
+/hw3/hw3_venv/
+/hw3/part_one/xd
+
+hw3/mlops-communal-102001-PetrovichPetrPetrov.pem
+hw3/part_two/
+.DS_Store
